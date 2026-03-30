@@ -13,11 +13,10 @@ def count(bag):
 
 # 코드 1.2: Bag을 활용한 테스트 프로그램
 myBag = []
-insert(myBag, 'apple')
-print('내 가방속의 물건:', myBag)
-
-insert(myBag, 'banana')
-print('내 가방속의 물건:', myBag)
-
+insert(myBag, '휴대폰')
+insert(myBag, '자료구조')
 remove(myBag, myBag[0])
+insert(myBag, '빗')
 print('내 가방속의 물건:', myBag)
+print('내 가방속의 물건 유무:', contains(myBag, '휴대폰'))
+print('내 가방속의 물건 개수:', count(myBag))
